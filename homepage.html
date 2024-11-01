@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="tabs">
+        <div class="tabs-container">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="tab-links">
+                <a class="tab" href="homepage.html">Home</a>
+                <a class="tab" href="index.html">Key Information</a>
+                <a class="tab" href="itinerary.html" style="border-right: none;">Travel Itinerary</a>
+                <span class="tab-slider"></span>
+            </div>
+        </div>
+    </div>
+    <section class="hero">
+        <h1>Welcome to Tarzan Trails !</h1>
+        <button onclick="location.href='#trail-search'" class="explore-button">Let's Explore !</button>
+    </section>
+    <section id="trail-search" class="trail-search">
+        <h2>Famous Mountain Trails  ⌕</h2>
+        <form onsubmit="searchTrails(event)">
+            <label for="country">Enter Country Name:</label>
+            <input type="text" id="country" name="country" placeholder="e.g: Malaysia" required>
+            <button type="submit">Search Trails</button>
+        </form>
+    </section>
+    <br><br><br><br><br>
+    <div class="footer">
+        <div id="button"></div>
+      <div id="container">
+      <div id="cont">
+      <div class="footer_center">
+            <h3>© 2024 By Tarzan Trails ᨒ | Designed by : Hannah Z.</h3>
+      </div>
+      </div>
+      </div>
+    </div>
+    <script src="homepage.js"></script>
+</body>
+</html>
